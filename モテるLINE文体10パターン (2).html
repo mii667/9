@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>なぜか男に好かれる子のLINE文体・習慣10パターン</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --coral: #ff6b6b;
+      --coral-light: #ff9a9a;
+      --coral-pale: #fff0f0;
+      --charcoal: #2d2d2d;
+      --charcoal2: #1a1a1a;
+      --mid: #6b6b6b;
+      --light: #f7f7f7;
+      --white: #ffffff;
+      --line-green: #06c755;
+      --line-bg: #87ceab;
+      --accent: #ff4d79;
+      --gold: #f0a500;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: #f5f5f5;
+      color: var(--charcoal);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--charcoal2);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-top {
+      padding: 48px 24px 32px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* スマホ装飾 */
+    .phone-deco {
+      position: absolute;
+      right: -20px; top: 20px;
+      width: 120px; height: 200px;
+      border: 2px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      transform: rotate(12deg);
+      z-index: 1;
+    }
+
+    .phone-deco::before {
+      content: '';
+      position: absolute;
+      top: 8px; left: 50%; transform: translateX(-50%);
+      width: 30px; height: 4px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+    }
+
+    .phone-deco2 {
+      position: absolute;
+      left: -30px; bottom: 10px;
+      width: 90px; height: 150px;
+      border: 2px solid rgba(255,107,107,0.1);
+      border-radius: 16px;
+      transform: rotate(-8deg);
+      z-index: 1;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--coral-light);
+      margin-bottom: 16px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--coral-light);
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      font-weight: 900;
+      color: white;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 em {
+      color: var(--coral-light);
+      font-style: normal;
+      display: block;
+      font-size: 34px;
+    }
+
+    .hero-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.9;
+    }
+
+    /* ヒーロー下部の装飾バー */
+    .hero-bar {
+      background: var(--coral);
+      height: 4px;
+      width: 100%;
+    }
+
+    /* ===== INTRO ===== */
+    .intro {
+      background: white;
+      padding: 28px 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .intro-inner { max-width: 640px; margin: 0 auto; }
+
+    .intro p {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 2.1;
+    }
+
+    .intro strong { color: var(--charcoal); }
+
+    /* ===== INDEX ===== */
+    .index-section {
+      background: var(--charcoal2);
+      padding: 20px;
+    }
+
+    .index-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+    }
+
+    .index-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 10px 6px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .index-item:hover {
+      background: rgba(255,107,107,0.15);
+      border-color: rgba(255,107,107,0.3);
+    }
+
+    .index-num {
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--coral-light);
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    .index-label {
+      font-size: 9px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.3;
+    }
+
+    /* ===== MAIN ===== */
+    .main { max-width: 640px; margin: 0 auto; padding: 24px 16px 0; }
+
+    /* ===== PATTERN CARD ===== */
+    .pattern-block {
+      margin-bottom: 28px;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    /* カードトップ */
+    .pattern-top {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid #f5f5f5;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .pattern-tag {
+      background: var(--charcoal2);
+      color: var(--coral-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .pattern-title-wrap { flex: 1; }
+
+    .pattern-category {
+      font-size: 10px;
+      font-weight: 700;
+      color: #bbb;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .pattern-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--charcoal);
+      line-height: 1.4;
+    }
+
+    /* 比較エリア */
+    .compare-area {
+      padding: 18px 20px;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .compare-col { }
+
+    .compare-col-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .col-badge {
+      font-size: 10px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .badge-ng { background: #ffeaea; color: #e53935; }
+    .badge-ok { background: #e8f5e9; color: #2e7d32; }
+
+    .col-label {
+      font-size: 10px;
+      color: #bbb;
+      font-weight: 700;
+    }
+
+    /* LINEモック */
+    .line-mock {
+      background: #e8f4ea;
+      border-radius: 14px;
+      padding: 12px;
+      min-height: 100px;
+    }
+
+    .line-mock.ng-mock { background: #f5f5f5; }
+
+    .mock-time {
+      text-align: center;
+      font-size: 9px;
+      color: rgba(0,0,0,0.35);
+      margin-bottom: 8px;
+    }
+
+    /* メッセージバブル - 自分（右） */
+    .bubble-self {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 6px;
+      gap: 4px;
+      align-items: flex-end;
+    }
+
+    .bubble-self .read-info {
+      font-size: 9px;
+      color: rgba(0,0,0,0.4);
+      text-align: right;
+      line-height: 1.3;
+    }
+
+    .bubble-self .msg {
+      background: #06c755;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 14px 14px 3px 14px;
+      font-size: 12px;
+      line-height: 1.6;
+      max-width: 90%;
+      font-weight: 500;
+    }
+
+    .ng-mock .bubble-self .msg { background: #888; }
+
+    /* メッセージバブル - 彼（左） */
+    .bubble-him {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .bubble-him .msg {
+      background: white;
+      color: #333;
+      padding: 8px 12px;
+      border-radius: 14px 14px 14px 3px;
+      font-size: 12px;
+      line-height: 1.6;
+      max-width: 85%;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* タイムスタンプ */
+    .msg-time {
+      font-size: 9px;
+      color: rgba(0,0,0,0.35);
+      align-self: flex-end;
+      margin: 0 3px;
+      flex-shrink: 0;
+    }
+
+    /* スタンプ */
+    .stamp {
+      font-size: 32px;
+      line-height: 1;
+      text-align: right;
+      padding-right: 4px;
+    }
+
+    .ng-stamp { filter: grayscale(60%) opacity(0.6); }
+
+    /* 差分ポイント */
+    .diff-point {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      font-size: 10px;
+      color: var(--mid);
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .diff-arrow { color: var(--coral); font-weight: 900; }
+
+    /* 解説エリア */
+    .explain-area {
+      padding: 16px 20px;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    .explain-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    .explain-text {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.9;
+    }
+
+    .explain-text strong { color: var(--charcoal); }
+
+    /* ルールボックス */
+    .rule-box {
+      margin: 14px 20px 18px;
+      background: var(--charcoal2);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .rule-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .rule-content { flex: 1; }
+
+    .rule-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--coral-light);
+      margin-bottom: 5px;
+    }
+
+    .rule-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      line-height: 1.7;
+    }
+
+    /* ===== MASTER RULES ===== */
+    .master-section {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 16px 20px;
+    }
+
+    .master-card {
+      background: var(--charcoal2);
+      border-radius: 20px;
+      padding: 28px 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .master-card::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,107,0.1) 0%, transparent 70%);
+    }
+
+    .master-tag {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--coral-light);
+      margin-bottom: 12px;
+    }
+
+    .master-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: white;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .master-title em { color: var(--coral-light); font-style: italic; }
+
+    .master-items { display: grid; gap: 10px; }
+
+    .master-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      border-left: 3px solid var(--coral);
+    }
+
+    .master-num {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--coral);
+      line-height: 1;
+      flex-shrink: 0;
+      min-width: 28px;
+    }
+
+    .master-text {
+      font-size: 13px;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .master-text strong { color: white; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--charcoal2);
+      padding: 32px 20px;
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .footer-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-line-el { flex: 1; height: 1px; background: rgba(255,255,255,0.1); }
+    .footer-dot { width: 6px; height: 6px; background: var(--coral); border-radius: 50%; }
+
+    .footer-msg {
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+
+    .footer-msg em { color: var(--coral-light); font-style: italic; }
+
+    .footer-sub { font-size: 12px; color: #555; margin-bottom: 16px; }
+
+    .footer-copy { font-size: 11px; color: #444; }
+
+    /* セパレーター */
+    .sep {
+      max-width: 640px;
+      margin: 0 auto 16px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sep-line { flex: 1; height: 1px; background: #e8e8e8; }
+    .sep-text { font-size: 10px; letter-spacing: 1px; color: #ccc; font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="phone-deco"></div>
+  <div class="phone-deco2"></div>
+  <div class="hero-top">
+    <div class="hero-eyebrow">無料プレゼント</div>
+    <h1>
+      <em>なぜか男に</em>
+      好かれる子の<br>LINE習慣
+    </h1>
+    <p class="hero-sub">
+      テンプレじゃない。<br>
+      文体・スタンプ・タイミング…<br>
+      LINEの「空気感」で全部決まる。
+    </p>
+  </div>
+  <div class="hero-bar"></div>
+</div>
+
+<!-- INTRO -->
+<div class="intro">
+  <div class="intro-inner">
+    <p>
+      同じ言葉を送っても、<strong>「なんか気になる」子と「普通の子」</strong>に分かれます。<br><br>
+      その差は内容ではなく<strong>「LINE全体の空気感」</strong>。返信のタイミング・文章の長さ・絵文字の使い方・話の終わらせ方…。これらが組み合わさったとき、男性は「もっと話したい」と感じます。<br><br>
+      10のパターンを読んで、<strong>今日から真似できるものだけ取り入れてください。</strong>
+    </p>
+  </div>
+</div>
+
+<!-- INDEX -->
+<div class="index-section">
+  <div class="index-inner" id="index-wrap"></div>
+</div>
+
+<!-- MAIN -->
+<div class="main" id="main-wrap"></div>
+
+<!-- MASTER RULES -->
+<div class="master-section">
+  <div class="master-card">
+    <div class="master-tag">MASTER RULES</div>
+    <div class="master-title">全パターンに共通する<br><em>「モテるLINE」の本質3つ</em></div>
+    <div class="master-items">
+      <div class="master-item">
+        <div class="master-num">01</div>
+        <div class="master-text"><strong>「返信を待っていた感」を出さない</strong><br>即返し・追撃・長文…これらはすべて「待っていました」というサインになります。自分の生活がある人のLINEは、自然とテンポが「ちょうどいい」になります。</div>
+      </div>
+      <div class="master-item">
+        <div class="master-num">02</div>
+        <div class="master-text"><strong>「余白」を残して終わらせる</strong><br>会話を長く続けることより、「もっと話したかったのに」という気持ちを彼に残すほうが大切。先に切り上げる・返信に余韻を残すことが次への引力になります。</div>
+      </div>
+      <div class="master-item">
+        <div class="master-num">03</div>
+        <div class="master-text"><strong>「自分のペース」で返す</strong><br>彼のリズムに合わせすぎると「どうせいつでも返ってくる」になります。自分のペースを持っている人のLINEには、自然と「また連絡したい」という気持ちが生まれます。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-line">
+    <div class="footer-line-el"></div>
+    <div class="footer-dot"></div>
+    <div class="footer-line-el"></div>
+  </div>
+  <div class="footer-msg">LINEは<em>「会話の内容」より<br>「空気感」</em>が9割。</div>
+  <p class="footer-sub">今日から1つだけ変えてみてください。</p>
+  <p class="footer-copy">© みい モテ育成 ｜ 無断転載禁止</p>
+</div>
+
+<script>
+const patterns = [
+  {
+    num: "01",
+    cat: "返信タイミング",
+    name: "返信は「1〜2時間後」が黄金タイム",
+    ng: {
+      label: "追う女のLINE",
+      time: "23:04",
+      bubbles: [
+        { type: "him", msg: "今日楽しかったよ！" },
+        { type: "time", msg: "23:04（1分後）" },
+        { type: "self", msg: "私も楽しかった！！！\nまた絶対行こうね😊😊\nほんとに今日ありがとう！！", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "23:04",
+      bubbles: [
+        { type: "him", msg: "今日楽しかったよ！" },
+        { type: "time", msg: "01:12（2時間後）" },
+        { type: "self", msg: "私も！\nまた行こうね😊", read: "既読" }
+      ]
+    },
+    diff: "同じ内容でも、返信タイミングだけでこんなに印象が変わる",
+    why: "即返しは「待っていました」というサインです。1〜2時間後に返すと「自分の生活がある」という余裕が伝わります。同じ言葉でも、タイミングだけで相手の受け取り方が全然違います。",
+    rule: { icon: "⏰", text: "返信は「読んだ瞬間」ではなく「返す気分になったとき」に送る。" }
+  },
+  {
+    num: "02",
+    cat: "文章の長さ",
+    name: "相手の返信と「同じ長さ」に合わせる",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "今日どうだった？" },
+        { type: "self", msg: "楽しかった〜！！\nあの後友達と渋谷行って\nカフェでずっとしゃべって！\nそういえばさ最近どんな感じ？\nなんかあった？😆😆", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "今日どうだった？" },
+        { type: "self", msg: "楽しかった〜！\n〇〇くんは？", read: "既読" },
+        { type: "him", msg: "俺も！そういえばさ…" }
+      ]
+    },
+    diff: "短く返すと彼が「もっと話したい」と自然に続きを話してくれる",
+    why: "長文を送るほど「この子は話したくて仕方ない」という印象になります。相手と同じか少し短いくらいが黄金比。短く返すと彼が続きを話したくなり、会話の主導権が自然に彼に移ります。",
+    rule: { icon: "📏", text: "彼が3行なら自分も3行以内。彼が一言なら自分も一言。長さを合わせるだけで「話しやすい子」になれる。" }
+  },
+  {
+    num: "03",
+    cat: "絵文字・スタンプ",
+    name: "絵文字は「1つだけ」が一番効く",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今日ありがとう😊😆💕✨🙏\nほんと楽しかった〜💓💓\nまたね！！😋🥰", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今日ありがとう！\n楽しかった😊", read: "既読" }
+      ]
+    },
+    diff: "絵文字が少ない方がメッセージの重みが増す",
+    why: "絵文字を多用すると「必死感」が出てしまいます。逆に1つだけ使うと、その絵文字に自然と気持ちが乗ります。「😊」1つのほうが「😊💕✨😆」より100倍伝わります。",
+    rule: { icon: "😊", text: "絵文字は1メッセージに1個まで。使いどころを絞るほど、1つの絵文字が輝く。" }
+  },
+  {
+    num: "04",
+    cat: "話の終わらせ方",
+    name: "会話は「自分から」先に終わらせる",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "そういえばさ〜" },
+        { type: "self", msg: "え、なになに？！😆", read: "既読" },
+        { type: "him", msg: "まあいいや笑\nそろそろ寝るね" },
+        { type: "self", msg: "え〜もっと話そ！\nまだ寝なくていいじゃん😣", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今日楽しかった！\nそろそろ寝るね、おやすみ😊", read: "既読" },
+        { type: "him", msg: "え、もう？笑\nおやすみ〜また話そ" }
+      ]
+    },
+    diff: "先に終わらせると「え、もう？」という気持ちが残る",
+    why: "会話を引き伸ばそうとするほど、彼は「なんとなく疲れる」と感じます。自分から先に「おやすみ」と言うと、彼の中に「もっと話したかった」という感覚が残り、それが次への期待に変わります。",
+    rule: { icon: "🌙", text: "「まだ話せるけど、今日はここまで」を意識的に作る。引き際の上手い女性は、必ず追われる。" }
+  },
+  {
+    num: "05",
+    cat: "リアクションの質",
+    name: "「すごい！」より「それ詳しく！」",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "最近仕事がうまくいってて" },
+        { type: "self", msg: "え〜すごい！！\nさすがだね😆✨", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "最近仕事がうまくいってて" },
+        { type: "self", msg: "え、どんなふうに？\n気になる", read: "既読" },
+        { type: "him", msg: "実はさ〜（と語り始める）" }
+      ]
+    },
+    diff: "「どんなふうに？」の一言が彼に「もっと話したい」を引き出す",
+    why: "「すごい！」は会話を終わらせる言葉です。「どんなふうに？」「それ詳しく聞きたい」は会話を広げる言葉。彼が自分について話せる空間を作ってくれる子は、一緒にいて「楽しい・心地よい」と感じさせます。",
+    rule: { icon: "💬", text: "褒める前に「どんなふうに？」「それ何で？」と一言聞く。彼が話したくなる質問が最強のリアクション。" }
+  },
+  {
+    num: "06",
+    cat: "追撃・確認",
+    name: "既読スルーへの「正しい沈黙」",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今日どうだった？", read: "既読" },
+        { type: "time", msg: "3時間後" },
+        { type: "self", msg: "忙しい？", read: "既読" },
+        { type: "time", msg: "1時間後" },
+        { type: "self", msg: "怒ってる？😢", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今日どうだった？", read: "既読" },
+        { type: "time", msg: "（何もしない）" },
+        { type: "him", msg: "ごめん、さっき気づいた！\nちょっとバタバタしてて〜" }
+      ]
+    },
+    diff: "何もしないことで「余裕がある」が伝わり、彼から連絡が来る",
+    why: "追撃LINEを送るたびに「この子は不安定だ」という印象がついていきます。既読スルーは9割が「忙しかっただけ」。何もせず待っていると、彼が罪悪感から連絡してくることがほとんどです。",
+    rule: { icon: "🤐", text: "既読スルーされたら「追撃ゼロ」が正解。彼が返してくるまで、スマホを置いて自分の時間を楽しむ。" }
+  },
+  {
+    num: "07",
+    cat: "「ありがとう」の質",
+    name: "感謝に「感情」を乗せる",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "送ってくよ" },
+        { type: "self", msg: "ありがとうございます！\nすみません😊", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "送ってくよ" },
+        { type: "self", msg: "嬉しい。\nありがとう😊", read: "既読" },
+        { type: "him", msg: "（ドキッとする）" }
+      ]
+    },
+    diff: "「ありがとう」の前に感情を1つ加えるだけで温度が全然違う",
+    why: "「ありがとうございます！」は丁寧ですが、温度がありません。「嬉しい」「それ好きだな」「助かった」など、感情を1語加えるだけで一気に親密さが生まれます。感情を乗せたありがとうは、男性がもう一度やってあげたいと思う言葉です。",
+    rule: { icon: "💗", text: "ありがとうの前に一言感情を添える。「嬉しい、ありがとう」「それめっちゃ助かった」だけで十分。" }
+  },
+  {
+    num: "08",
+    cat: "自分から送る頻度",
+    name: "「おはよう」は毎日送らない",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "おはよう！☀️", read: "既読（返信なし）" },
+        { type: "time", msg: "翌日" },
+        { type: "self", msg: "おはよう😊", read: "既読（返信なし）" },
+        { type: "time", msg: "翌々日" },
+        { type: "self", msg: "おはよう！今日も一日頑張ろ✨", read: "既読（返信なし）" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "time", msg: "（何日も自分からは送らない）" },
+        { type: "him", msg: "最近どうしてる？" },
+        { type: "self", msg: "元気だよ〜！\n〇〇くんは？", read: "既読" }
+      ]
+    },
+    diff: "毎日送ると「当たり前の存在」になる。送らない日が彼を動かす",
+    why: "毎日「おはよう」を送ることで、彼の中に「この子はいつでもいる」という安心感が生まれます。それはつまり「追わなくていい」ということ。送らない日があることで、彼が「あれ、今日は来ないな」と感じ、自ら連絡してくるようになります。",
+    rule: { icon: "📵", text: "「送りたいから送る」ではなく「送らなくても平気」な自分でいる。連絡しない日が彼の「気になる」を育てる。" }
+  },
+  {
+    num: "09",
+    cat: "誘い方",
+    name: "誘うときは「対等な立場」で",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "暇だったら\n会えたりしますか？😊", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "self", msg: "今週末ってどう？", read: "既読" },
+        { type: "him", msg: "空いてるよ！" },
+        { type: "self", msg: "じゃあ〇〇行こ", read: "既読" }
+      ]
+    },
+    diff: "「暇だったら」は下手に出すぎ。「今週末どう？」は対等",
+    why: "「暇だったら」という言葉は「断られてもいい」という前提から生まれます。それは相手に「別に行かなくてもいいんだな」と思わせます。「今週末どう？」は対等な誘い方で、彼が「行きたい」か「いけない」かだけを考えさせます。",
+    rule: { icon: "🤝", text: "誘うときは対等に、シンプルに。「暇なら」「もしよければ」の前置きを全部取るだけで印象が変わる。" }
+  },
+  {
+    num: "10",
+    cat: "文末のトーン",
+    name: "語尾に「余韻」を残す",
+    ng: {
+      label: "追う女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "また会いたいな" },
+        { type: "self", msg: "私も！！\nほんとにまた会いたい！！！\nいつにしよ？来週とか？\n土曜どう？日曜は？😆😆", read: "既読" }
+      ]
+    },
+    ok: {
+      label: "追われる女のLINE",
+      time: "",
+      bubbles: [
+        { type: "him", msg: "また会いたいな" },
+        { type: "self", msg: "…うん。", read: "既読" },
+        { type: "him", msg: "（ドキッ）じゃあいつにする？" }
+      ]
+    },
+    diff: "「…うん。」の三点リーダーと句点が余韻を生む",
+    why: "嬉しい気持ちを全部言葉にしてしまうと余韻が消えます。「…うん。」という短い返しには、言葉にならない感情が漂います。「。」や「…」をうまく使うと、LINEのテキストに感情の温度が生まれます。",
+    rule: { icon: "✍️", text: "「！！！」の代わりに「。」を使ってみる。句読点と三点リーダーは、感情を凝縮させる魔法の記号。" }
+  }
+];
+
+function buildIndex() {
+  const wrap = document.getElementById('index-wrap');
+  patterns.forEach(p => {
+    const item = document.createElement('div');
+    item.className = 'index-item';
+    item.innerHTML = `<div class="index-num">${p.num}</div><div class="index-label">${p.cat}</div>`;
+    item.onclick = () => {
+      document.getElementById(`pattern-${p.num}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    wrap.appendChild(item);
+  });
+}
+
+function buildBubbles(bubbles, isNg) {
+  return bubbles.map(b => {
+    if (b.type === 'time') return `<div class="mock-time">${b.msg}</div>`;
+    if (b.type === 'him') return `<div class="bubble-him"><div class="msg">${b.msg.replace(/\n/g,'<br>')}</div></div>`;
+    if (b.type === 'self') {
+      return `
+        <div class="bubble-self">
+          <div class="read-info">${b.read || ''}</div>
+          <div class="msg">${b.msg.replace(/\n/g,'<br>')}</div>
+        </div>`;
+    }
+    if (b.type === 'stamp') return `<div class="stamp ${isNg ? 'ng-stamp' : ''}">${b.emoji}</div>`;
+    return '';
+  }).join('');
+}
+
+function buildPatterns() {
+  const wrap = document.getElementById('main-wrap');
+  patterns.forEach((p, i) => {
+    if (i > 0) {
+      const sep = document.createElement('div');
+      sep.className = 'sep';
+      sep.innerHTML = `<div class="sep-line"></div><div class="sep-text">PATTERN ${p.num}</div><div class="sep-line"></div>`;
+      wrap.appendChild(sep);
+    }
+
+    const block = document.createElement('div');
+    block.className = 'pattern-block';
+    block.id = `pattern-${p.num}`;
+
+    block.innerHTML = `
+      <div class="pattern-top">
+        <div class="pattern-tag">${p.num}</div>
+        <div class="pattern-title-wrap">
+          <div class="pattern-category">${p.cat}</div>
+          <div class="pattern-name">${p.name}</div>
+        </div>
+      </div>
+      <div class="compare-area">
+        <div class="compare-grid">
+          <div class="compare-col">
+            <div class="compare-col-header">
+              <span class="col-badge badge-ng">NG</span>
+              <span class="col-label">${p.ng.label}</span>
+            </div>
+            <div class="line-mock ng-mock">
+              ${p.ng.time ? `<div class="mock-time">${p.ng.time}</div>` : ''}
+              ${buildBubbles(p.ng.bubbles, true)}
+            </div>
+          </div>
+          <div class="compare-col">
+            <div class="compare-col-header">
+              <span class="col-badge badge-ok">OK</span>
+              <span class="col-label">${p.ok.label}</span>
+            </div>
+            <div class="line-mock">
+              ${p.ok.time ? `<div class="mock-time">${p.ok.time}</div>` : ''}
+              ${buildBubbles(p.ok.bubbles, false)}
+            </div>
+          </div>
+        </div>
+        <div class="diff-point">
+          <span class="diff-arrow">→</span>
+          <span>${p.diff}</span>
+        </div>
+      </div>
+      <div class="explain-area">
+        <div class="explain-label">WHY IT WORKS</div>
+        <div class="explain-text">${p.why.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>
+      </div>
+      <div class="rule-box">
+        <div class="rule-icon">${p.rule.icon}</div>
+        <div class="rule-content">
+          <div class="rule-label">RULE</div>
+          <div class="rule-text">${p.rule.text}</div>
+        </div>
+      </div>
+    `;
+
+    wrap.appendChild(block);
+  });
+}
+
+buildIndex();
+buildPatterns();
+</script>
+</body>
+</html>
